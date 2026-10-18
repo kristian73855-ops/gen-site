@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tags for Google Search -->
+    <title>Fortnite Account Generator | Free Accounts</title>
+    <meta name="description" content="Generate Fortnite accounts easily with our fast and secure web generator tool.">
+    <meta name="keywords" content="fortnite, account generator, fortnite accounts, free generator">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Password Lock Screen -->
+    <div id="login-screen" class="container">
+        <h2>🔒 Access Restricted</h2>
+        <p>Please enter the access password to unlock the generator:</p>
+        <input type="password" id="access-pass" placeholder="Enter Password...">
+        <button onclick="checkPassword()">Unlock Generator</button>
+        <p id="error-msg" class="error"></p>
+    </div>
+
+    <!-- Generator Interface (Hidden by default) -->
+    <div id="generator-screen" class="container hidden">
+        <h1>⚡ Fortnite Account Generator</h1>
+        <p class="subtitle">Click the button below to generate a new account format.</p>
+        
+        <div class="display-box">
+            <span id="account-output">email:password</span>
+        </div>
+
+        <div class="btn-group">
+            <button class="gen-btn" onclick="generateAccount()">Generate Account</button>
+            <button class="copy-btn" onclick="copyAccount()">Copy to Clipboard</button>
+        </div>
+
+        <p id="status-msg" class="status"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
